@@ -1,0 +1,19 @@
+[package]
+name = "books"
+version = "0.1.0"
+authors = ["checkroth <checkroth@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.2"
+warp = "0.3"
+diesel = { version = "1.4.4", features = ["postgres"] }
+chrono = { version = "0.4" }
+
+# Long-term goal: use oxidizer/refinery instead of diesel?
+# oxidizer = "0.2"
+# refinery = "0.5"
