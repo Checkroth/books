@@ -1,6 +1,7 @@
 use chrono::{NaiveDate};
 use super::schema::*;
 
+
 #[derive(Queryable, Identifiable)]
 pub struct Author {
     pub id: i32,
